@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Add to Cart</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- ==== slick slider min.css Start==== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <!-- ==== slick slider End==== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ==== navbar start ==== -->
+
+    <a href="#" class="go-top"><i class="bi bi-arrow-up-circle"></i></a>
+
+    <nav class="navbar navbar-expand-md mnbar">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#"><img src="Frame 168.png" alt="" class="img-fluid logoimg"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div id="nav-icon2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+
+            <div class="collapse navbar-collapse clspnvb" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 home-ul">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="social-navm">
+
+                    <a href="#"><i class="bi bi-person-fill-exclamation"></i></a>
+                    <a href="#"><i class="bi bi-search"></i></a>
+                    <a href="#"><i class="bi bi-heart"></i></a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-cart"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- ==== modal cart start ==== -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Shopping Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="cart-produtaddmn">
+
+                        <div class="p-img">
+                            <img src="sofacart-1.png" class="img-fluid">
+                        </div>
+
+                        <div class="p-price">
+                            <div class="cart-product-name">Asgaard sofa</div>
+                            <div class="cart-product-price"><span class="clrstyle">1 X</span>&nbsp;&nbsp; Rs. 250,000.00
+                            </div>
+                        </div>
+
+                        <div class="p-close">
+                            <i class="bi bi-x-circle-fill"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="cart-produtaddmn mt-2">
+
+                        <div class="p-img">
+                            <img src="sofa-2cart.png" class="img-fluid">
+                        </div>
+
+                        <div class="p-price">
+                            <div class="cart-product-name">Casaliving Wood</div>
+                            <div class="cart-product-price"><span class="clrstyle">1 X</span>&nbsp;&nbsp; Rs. 270,000.00
+                            </div>
+                        </div>
+
+                        <div class="p-close">
+                            <i class="bi bi-x-circle-fill"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+
+                    <div class="subtlt">
+                        Subtotal <span class="subprc">Rs. 520,000.00</span>
+                    </div>
+
+                    <div class="crt-btn-ftr">
+                        <button type="button" class="cart-frt-btn"><a href="cart.html">Cart</a></button>
+                        <button type="button" class="cart-frt-btn"><a href="Checkout.html">Checkout</a></button>
+                        <button type="button" class="cart-frt-btn"><a
+                                href="Product-Comparison.html">Comparison</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==== modal cart End ====  -->
+
+    <!-- ==== navbar End ==== -->
+
+    <!-- ===== shop details start ===== -->
+
+    <div class="contailer">
+
+        <div class="row shop-details-main-row">
+
+            <div class="col-md-12 addtocart-nvbr">
+                <a href="#">
+                    <span class="gryclr">Home</span> <i class="bi bi-chevron-right"></i>
+                </a>
+
+                <a href="#">
+                    <span class="gryclr">Shop</span> <i class="bi bi-chevron-right"></i>
+                </a>
+
+                <div class="sprter"></div>
+
+                <a href="#">
+                    Asgaard sofa
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ===== shop details End ===== -->
+
+    <!-- ========== contant section start ============ -->
+
+    <div class="container card-contant-section">
+
+        <div class="row c-c-s-rw">
+
+            <div class="col-md-6 c-c-sctn-one">
+                <div class="clm-img-cnct-first">
+                    <div class="img-list-style">
+                        <img src="card-3-image.png" class="img-fluid smallimage">
+                        <img src="card-2-image.png" class="img-fluid smallimage">
+                        <img src="browse-img-1.png" class="img-fluid smallimage">
+                    </div>
+                    <div class="mnin-img-view-sec">
+                        <img src="img-main-addtocrt.png" class="img-fluid bigimage">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 c-c-sctn-two">
+                <div class="descraption-cart-items">
+                    <h3>Asgaard sofa</h3>
+                    <p>Rs. 250,000.00</p>
+                    <div class="ratting-star">
+                        <div class="five-star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <div class="sprter"></div>
+                        <p>5 Customer Review</p>
+                    </div>
+
+                    <p class="prdct-discptn">Setting the bar as one of the loudest speakers in its class, the Kilburn is
+                        a compact,
+                        stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs
+                        for a sound.
+                    </p>
+
+                    <div class="items-size-select">
+                        <p>Size</p>
+                        <div class="list-for-size" id="myDIV">
+                            <div class="prdct-for-size btnm">L</div>
+                            <div class="prdct-for-size btnm">XL</div>
+                            <div class="prdct-for-size btnm">XS</div>
+                        </div>
+                    </div>
+
+                    <div class="items-size-select mt-2">
+                        <p>Color</p>
+                        <div class="list-for-size">
+                            <div class="prdct-for-color-purple"></div>
+                            <div class="prdct-for-color-black"></div>
+                            <div class="prdct-for-color-brown"></div>
+                        </div>
+                    </div>
+
+                    <div class="row prdct-dtlsmn">
+                        <div class="col-md-4">
+                            <div class="wrapper-many-items">
+                                <span class="minus"><i class="bi bi-dash"></i></span>
+                                <span class="num">01</span>
+                                <span class="plus"><i class="bi bi-plus"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <button type="button" class="addtocrtbtn">Add To Cart</button>
+                        </div>
+
+                        <div class="col-md-4">
+                            <button type="button" class="addtocrtbtn"><i class="bi bi-plus"></i> <a
+                                    href="Product-Comparison.html">Compare</a></button>
+                        </div>
+
+                    </div>
+
+                    <hr class="adtocrthrline">
+
+                    <table class="table">
+                        <tr>
+                            <td>SKU</td>
+                            <td>: SS001</td>
+                        </tr>
+                        <tr>
+                            <td>Category</td>
+                            <td>: Sofas</td>
+                        </tr>
+                        <tr>
+                            <td>Tags</td>
+                            <td>: Sofa, Chair, Home, Shop</td>
+                        </tr>
+                        <tr>
+                            <td>Share</td>
+                            <td>: <span class="tbl-social"><i class="bi bi-facebook"></i> <i class="bi bi-linkedin"></i>
+                                    <i class="bi bi-twitter"></i></span> </td>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr class="adtocrthrline">
+
+    <!-- ========== contant section End =========== -->
+
+    <!-- ===============================
+      tab Description add info start 
+    =============================== -->
+
+    <div class="container Description-and-add-info">
+
+        <ul class="nav nav-tabs mnnvtb" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                    role="tab" aria-controls="home" aria-selected="true">Description</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false">Additional Information</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+                    role="tab" aria-controls="contact" aria-selected="false">Reviews [5]</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <p class="description">Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active
+                    stereo speaker takes
+                    the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.</p>
+                <p class="description">Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled
+                    engineering. Setting
+                    the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero
+                    with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both
+                    articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal
+                    preferences while the guitar-influenced leather strap enables easy and stylish travel.</p>
+
+                <div class="row description-img-rw">
+                    <div class="col-md-6 p-3">
+                        <img src="descption-img-one.png" class="img-fluid">
+                    </div>
+
+                    <div class="col-md-6 p-3">
+                        <img src="descption-img-two.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <p class="description">Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active
+                    stereo speaker takes
+                    the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.</p>
+                <p class="description">Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled
+                    engineering. Setting
+                    the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero
+                    with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both
+                    articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal
+                    preferences while the guitar-influenced leather strap enables easy and stylish travel.</p>
+
+                <div class="row description-img-rw">
+                    <div class="col-md-6 p-3">
+                        <img src="descption-img-one.png" class="img-fluid">
+                    </div>
+
+                    <div class="col-md-6 p-3">
+                        <img src="descption-img-two.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <p class="description">Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active
+                    stereo speaker takes
+                    the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.</p>
+                <p class="description">Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled
+                    engineering. Setting
+                    the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero
+                    with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both
+                    articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal
+                    preferences while the guitar-influenced leather strap enables easy and stylish travel.</p>
+
+                <div class="row description-img-rw">
+                    <div class="col-md-6 p-3">
+                        <img src="descption-img-one.png" class="img-fluid">
+                    </div>
+
+                    <div class="col-md-6 p-3">
+                        <img src="descption-img-two.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ===============================
+      tab Description add info End 
+    =============================== -->
+
+    <!-- ===== slider start ===== -->
+
+    <div class="container our-product-main-cntainer">
+
+        <h1 class="Browse-range-heading">Related Products</h1>
+
+        <div class="row rw-our-pdct mx-auto">
+
+            <div class="col-md-3 crd-sec-two">
+
+                <div class="card bgset">
+                    <div class="card-cncts">
+                        <img src="our-one.png" class="card-img-top" alt="...">
+                        <div class="pdiv">
+                            <p class="card-text crd-hed">Syltherine</p>
+                            <p class="crd-sec-pera">Stylish cafe chair</p>
+                            <p class="crd-price">Rp 2.500.000 <span class="d-p-crd"><del>Rp 3.500.000</del></span></p>
+                        </div>
+                    </div>
+                    <div class="card-body pgsn">
+
+                        <div class="addtocrt">
+                            <button type="button" class="btn btn-md bn-adcrt"><a href="addtocart.html">Add to cart<a
+                                        href="addtocart.html">Add to cart</a></button>
+                            <div class="social-cart-hvr">
+                                <i class="bi bi-share-fill">&nbsp; Share</i>
+                                <i class="bi bi-arrow-left-right">&nbsp; Compare</i>
+                                <i class="bi bi-heart">&nbsp; Like</i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-3 crd-sec-two">
+
+                <div class="card bgset">
+                    <div class="card-cncts">
+                        <img src="sslidersecond-image-2.png" class="card-img-top" alt="...">
+                        <div class="pdiv">
+                            <p class="card-text crd-hed">Leviosa</p>
+                            <p class="crd-sec-pera">Stylish cafe chair</p>
+                            <p class="crd-price">Rp 2.500.000 <span class="d-p-crd"><del>Rp 3.500.000</del></span></p>
+                        </div>
+                    </div>
+                    <div class="card-body pgsn">
+
+                        <div class="addtocrt">
+                            <button type="button" class="btn btn-md bn-adcrt"><a href="addtocart.html">Add to
+                                    cart</a></button>
+                            <div class="social-cart-hvr">
+                                <i class="bi bi-share-fill">&nbsp; Share</i>
+                                <i class="bi bi-arrow-left-right">&nbsp; Compare</i>
+                                <i class="bi bi-heart">&nbsp; Like</i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-3 crd-sec-two">
+
+                <div class="card bgset">
+                    <div class="card-cncts">
+                        <img src="crd-three.png" class="card-img-top" alt="...">
+                        <div class="pdiv">
+                            <p class="card-text crd-hed">Lolito</p>
+                            <p class="crd-sec-pera">Luxury big sofa</p>
+                            <p class="crd-price">Rp 7.000.000</p>
+                        </div>
+                    </div>
+                    <div class="card-body pgsn">
+
+                        <div class="addtocrt">
+                            <button type="button" class="btn btn-md bn-adcrt"><a href="addtocart.html">Add to
+                                    cart</a></button>
+                            <div class="social-cart-hvr">
+                                <i class="bi bi-share-fill">&nbsp; Share</i>
+                                <i class="bi bi-arrow-left-right">&nbsp; Compare</i>
+                                <i class="bi bi-heart">&nbsp; Like</i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-3 crd-sec-two">
+
+                <div class="card bgset">
+                    <div class="card-cncts">
+                        <img src="crd-four.png" class="card-img-top" alt="...">
+                        <div class="pdiv">
+                            <p class="card-text crd-hed">Respira</p>
+                            <p class="crd-sec-pera">Outdoor bar table and stool</p>
+                            <p class="crd-price">Rp 500.000</p>
+                        </div>
+                    </div>
+                    <div class="card-body pgsn">
+
+                        <div class="addtocrt">
+                            <button type="button" class="btn btn-md bn-adcrt"><a href="addtocart.html">Add to
+                                    cart</a></button>
+                            <div class="social-cart-hvr">
+                                <i class="bi bi-share-fill">&nbsp; Share</i>
+                                <i class="bi bi-arrow-left-right">&nbsp; Compare</i>
+                                <i class="bi bi-heart">&nbsp; Like</i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-3 crd-sec-two">
+
+                <div class="card bgset">
+                    <div class="card-cncts">
+                        <img src="grrifo-imgcaard.png" class="card-img-top" alt="...">
+                        <div class="pdiv">
+                            <p class="card-text crd-hed">Grifo</p>
+                            <p class="crd-sec-pera">Night lamp</p>
+                            <p class="crd-price">Rp 1.500.000</p>
+                        </div>
+                    </div>
+                    <div class="card-body pgsn">
+
+                        <div class="addtocrt">
+                            <button type="button" class="btn btn-md bn-adcrt"><a href="addtocart.html">Add to
+                                    cart</a></button>
+                            <div class="social-cart-hvr">
+                                <i class="bi bi-share-fill">&nbsp; Share</i>
+                                <i class="bi bi-arrow-left-right">&nbsp; Compare</i>
+                                <i class="bi bi-heart">&nbsp; Like</i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-3 crd-sec-two">
+
+                <div class="card bgset">
+                    <div class="card-cncts">
+                        <img src="muggocsrdimg.png" class="card-img-top" alt="...">
+                        <div class="pdiv">
+                            <p class="card-text crd-hed">Muggo</p>
+                            <p class="crd-sec-pera">Small mug</p>
+                            <p class="crd-price">Rp 150.000</p>
+                        </div>
+                    </div>
+                    <div class="card-body pgsn">
+
+                        <div class="addtocrt">
+                            <button type="button" class="btn btn-md bn-adcrt"><a href="addtocart.html">Add to
+                                    cart</a></button>
+                            <div class="social-cart-hvr">
+                                <i class="bi bi-share-fill">&nbsp; Share</i>
+                                <i class="bi bi-arrow-left-right">&nbsp; Compare</i>
+                                <i class="bi bi-heart">&nbsp; Like</i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-3 crd-sec-two">
+
+                <div class="card bgset">
+                    <div class="card-cncts">
+                        <img src="Pingkycardimg.png" class="card-img-top" alt="...">
+                        <div class="pdiv">
+                            <p class="card-text crd-hed">Pingky</p>
+                            <p class="crd-sec-pera">Cute bed set</p>
+                            <p class="crd-price">Rp 7.000.000 <span class="d-p-crd"><del>Rp 14.000.000</del></span></p>
+                        </div>
+                    </div>
+                    <div class="card-body pgsn">
+
+                        <div class="addtocrt">
+                            <button type="button" class="btn btn-md bn-adcrt"><a href="addtocart.html">Add to
+                                    cart</a></button>
+                            <div class="social-cart-hvr">
+                                <i class="bi bi-share-fill">&nbsp; Share</i>
+                                <i class="bi bi-arrow-left-right">&nbsp; Compare</i>
+                                <i class="bi bi-heart">&nbsp; Like</i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-3 crd-sec-two">
+
+                <div class="card bgset">
+                    <div class="card-cncts">
+                        <img src="Pottycardimg.png" class="card-img-top" alt="...">
+                        <div class="pdiv">
+                            <p class="card-text crd-hed">Potty</p>
+                            <p class="crd-sec-pera">Minimalist flower pot</p>
+                            <p class="crd-price">Rp 500.000</p>
+                        </div>
+                    </div>
+                    <div class="card-body pgsn">
+
+                        <div class="addtocrt">
+                            <button type="button" class="btn btn-md bn-adcrt"><a href="addtocart.html">Add to
+                                    cart</a></button>
+                            <div class="social-cart-hvr">
+                                <i class="bi bi-share-fill">&nbsp; Share</i>
+                                <i class="bi bi-arrow-left-right">&nbsp; Compare</i>
+                                <i class="bi bi-heart">&nbsp; Like</i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <button type="button" class="our-product-more-btn"><a href="shop.html">Show More</a></button>
+
+    </div>
+
+    <!-- ===== Our Product section one End ====  -->
+
+
+    <!-- ==== footer section start ==== -->
+
+    <footer>
+
+        <div class="container-fluid footer-section mt-5">
+
+            <div class="row rw-footer">
+
+                <div class="col-md-4 logo-ftr">
+
+                    <ul class="logo-ul">Funiro.
+                        <li class="logo-pera">
+                            400 University Drive Suite 200 Coral <br> Gables, <br> FL 33134 USA
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-2 menu-ftr">
+
+                    <ul class="menu-ul">Links
+                        <li>Home</li>
+                        <li>Shop</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-2 manu-ftr">
+
+                    <ul class="menu-ul">Help
+                        <li>Payment Options</li>
+                        <li>Returns</li>
+                        <li>Privacy Policies</li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4 subscribe-ftr">
+
+                    <ul class="menu-ul">Newsletter
+                        <li>
+                            <input type="text" placeholder="Enter Your Email Address" name="email" id="email"
+                                class="ftr-mail"> <button type="submit" class="btn-ftrsbcrib">SUBSCRIBE</button>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+            <div class="container copy-right">
+                2023 furino. All rights reverved
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ===== footer section End ==== -->
+
+    <!-- ==== jquery CDN ====  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+    <!-- ==== Slick slider min.js CDN ====  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <script>
+
+        $('.rw-our-pdct').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".smallimage").hover(function () {
+                $(".bigimage").attr('src', $(this).attr('src'));
+            });
+        });
+    </script>
+
+    <script>
+
+        $(document).ready(function () {
+            $('.btnm').click(function () {
+                $(this).addClass('activeone');
+                $('.btnm').not(this).removeClass('activeone');
+            });
+        });
+
+    </script>
+
+    <script>
+
+        let plus = document.getElementsByClassName("plus")[0];
+        let minus = document.getElementsByClassName("minus")[0];
+        let num = document.getElementsByClassName("num")[0];
+
+        let a = 1;
+
+        plus.addEventListener("click", () => {
+            a++;
+            a = (a < 10) ? "0" + a : a;
+            num.innerText = a;
+        });
+
+        minus.addEventListener("click", () => {
+            if (a > 1) {
+                a--;
+                a = (a < 10) ? "0" + a : a;
+                num.innerText = a;
+            }
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#nav-icon2').click(function () {
+                $(this).toggleClass('open');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

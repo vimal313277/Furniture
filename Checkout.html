@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Checkout</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- ==== slick slider min.css Start==== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <!-- ==== slick slider End==== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ==== navbar start ==== -->
+
+    <a href="#" class="go-top"><i class="bi bi-arrow-up-circle"></i></a>
+
+    <nav class="navbar navbar-expand-md mnbar">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#"><img src="Frame 168.png" alt="" class="img-fluid logoimg"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div id="nav-icon2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+
+            <div class="collapse navbar-collapse clspnvb" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 home-ul">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="social-navm">
+
+                    <a href="#"><i class="bi bi-person-fill-exclamation"></i></a>
+                    <a href="#"><i class="bi bi-search"></i></a>
+                    <a href="#"><i class="bi bi-heart"></i></a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-cart"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- ==== modal cart start ==== -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Shopping Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="cart-produtaddmn">
+
+                        <div class="p-img">
+                            <img src="sofacart-1.png" class="img-fluid">
+                        </div>
+
+                        <div class="p-price">
+                            <div class="cart-product-name">Asgaard sofa</div>
+                            <div class="cart-product-price"><span class="clrstyle">1 X</span>&nbsp;&nbsp; Rs. 250,000.00
+                            </div>
+                        </div>
+
+                        <div class="p-close">
+                            <i class="bi bi-x-circle-fill"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="cart-produtaddmn mt-2">
+
+                        <div class="p-img">
+                            <img src="sofa-2cart.png" class="img-fluid">
+                        </div>
+
+                        <div class="p-price">
+                            <div class="cart-product-name">Casaliving Wood</div>
+                            <div class="cart-product-price"><span class="clrstyle">1 X</span>&nbsp;&nbsp; Rs. 270,000.00
+                            </div>
+                        </div>
+
+                        <div class="p-close">
+                            <i class="bi bi-x-circle-fill"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+
+                    <div class="subtlt">
+                        Subtotal <span class="subprc">Rs. 520,000.00</span>
+                    </div>
+
+                    <div class="crt-btn-ftr">
+                        <button type="button" class="cart-frt-btn"><a href="cart.html">Cart</a></button>
+                        <button type="button" class="cart-frt-btn"><a href="Checkout.html">Checkout</a></button>
+                        <button type="button" class="cart-frt-btn"><a
+                                href="Product-Comparison.html">Comparison</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==== modal cart End ====  -->
+
+    <!-- ==== navbar End ==== -->
+
+    <!-- ==== Hiro sec start ==== -->
+
+    <div class="container-fluid shop-hiro-main">
+        <img src="compair-logo.png" class="img-fluid anmtn">
+        <h1>Checkout</h1>
+        <div class="sec-navbr-inmnbg text-center">
+            <a href="index.html">Home > </a><a href="Checkout.html" class="active-shopmn">Checkout</a>
+        </div>
+    </div>
+
+    <!-- ==== Hiro sec End ==== -->
+
+    <!-- ===================
+    Checkout section start
+    =================== -->
+
+    <div class="container Checkout-main-containr">
+
+        <div class="row rw-checkoutmain-">
+
+            <div class="col-md-12 billing-details-paymant">
+
+                <div class="row fnmandlnm">
+                    <h2>Billing details</h2>
+                    <div class="col-md-6">
+                        <label for="basic-url" class="form-label">First Name</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="basic-url" class="form-label">Last Name</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                    </div>
+
+                    <label for="basic-url" class="form-label">Company Name (Optional)</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="">
+                    </div>
+
+                    <label for="basic-url" class="form-label">Country / Region</label>
+                    <div class="input-group mb-3">
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Sri Lanka</option>
+                            <option value="1">India</option>
+                            <option value="2">Pakistan</option>
+                            <option value="3">usa</option>
+                        </select>
+                    </div>
+
+                    <label for="basic-url" class="form-label">Street address</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="">
+                    </div>
+
+                    <label for="basic-url" class="form-label">Town / City</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="">
+                    </div>
+
+                    <label for="basic-url" class="form-label">Province</label>
+                    <div class="input-group mb-3">
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Western Province</option>
+                            <option value="1">India</option>
+                            <option value="2">Pakistan</option>
+                            <option value="3">usa</option>
+                        </select>
+                    </div>
+
+                    <label for="basic-url" class="form-label">ZIP code</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="">
+                    </div>
+
+                    <label for="basic-url" class="form-label">Phone</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="">
+                    </div>
+
+                    <label for="basic-url" class="form-label">Email address</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Additional information">
+                    </div>
+
+                    <div class="payment-details-part">
+
+                        <div class="product-and-subtotal">
+
+                            <div class="product-part">
+                                <h5>Product</h5>
+                                <ul>
+                                    <li><span class="logo-pera-crt-scsn">Asgaard sofa</span> X 1</li>
+                                    <li>Subtotal</li>
+                                    <li>Total</li>
+                                </ul>
+                            </div>
+
+                            <div class="product-part text-end">
+                                <h5>Subtotal</h5>
+                                <ul>
+                                    <li>Rs. 250,000.00</li>
+                                    <li>Rs. 250,000.00</li>
+                                    <li><span class="subprc-crt-sbtlt">Rs. 250,000.00</span></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <hr class="sprt-sband-pdct">
+
+                        <div class="payment-tranfr-part-main">
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" checked>
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Direct Bank Transfer
+                                </label>
+                            </div>
+
+                            <p class="logo-pera mt-2">Make your payment directly into our bank account. Please use your
+                                Order ID as the payment reference. Your order will not be shipped until the funds have
+                                cleared in our account.
+                            </p>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Direct Bank Transfer
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Cash On Delivery
+                                </label>
+                            </div>
+
+                            <p class="mt-2">Your personal data will be used to support your experience throughout this
+                                website, to
+                                manage access to your account, and for other purposes described in our <span
+                                    class="clr-black">privacy policy.</span>
+                            </p>
+
+                            <p class="text-center"><button type="button" class="cheak-outbtn"><a href="#">Check
+                                        Out</a></button></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ===================
+     Checkout section End
+    =================== -->
+
+    <!-- ==== footer section start ==== -->
+
+    <footer>
+
+        <div class="container-fluid footer-section mt-5">
+
+            <div class="row rw-footer">
+
+                <div class="col-md-4 logo-ftr">
+
+                    <ul class="logo-ul">Funiro.
+                        <li class="logo-pera">
+                            400 University Drive Suite 200 Coral <br> Gables, <br> FL 33134 USA
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-2 menu-ftr">
+
+                    <ul class="menu-ul">Links
+                        <li>Home</li>
+                        <li>Shop</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-2 manu-ftr">
+
+                    <ul class="menu-ul">Help
+                        <li>Payment Options</li>
+                        <li>Returns</li>
+                        <li>Privacy Policies</li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4 subscribe-ftr">
+
+                    <ul class="menu-ul">Newsletter
+                        <li>
+                            <input type="text" placeholder="Enter Your Email Address" name="email" id="email"
+                                class="ftr-mail"> <button type="submit" class="btn-ftrsbcrib">SUBSCRIBE</button>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+            <div class="container copy-right">
+                2023 furino. All rights reverved
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ===== footer section End ==== -->
+
+    <!-- ==== jquery CDN ====  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+    <!-- ==== Slick slider min.js CDN ====  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#nav-icon2').click(function () {
+                $(this).toggleClass('open');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

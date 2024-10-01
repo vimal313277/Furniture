@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Product-Comparison</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- ==== slick slider min.css Start==== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <!-- ==== slick slider End==== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ==== navbar start ==== -->
+
+    <a href="#" class="go-top"><i class="bi bi-arrow-up-circle"></i></a>
+
+    <nav class="navbar navbar-expand-md mnbar">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#"><img src="Frame 168.png" alt="" class="img-fluid logoimg"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div id="nav-icon2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+
+            <div class="collapse navbar-collapse clspnvb" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 home-ul">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="social-navm">
+
+                    <a href="#"><i class="bi bi-person-fill-exclamation"></i></a>
+                    <a href="#"><i class="bi bi-search"></i></a>
+                    <a href="#"><i class="bi bi-heart"></i></a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-cart"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- ==== modal cart start ==== -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Shopping Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="cart-produtaddmn">
+
+                        <div class="p-img">
+                            <img src="sofacart-1.png" class="img-fluid">
+                        </div>
+
+                        <div class="p-price">
+                            <div class="cart-product-name">Asgaard sofa</div>
+                            <div class="cart-product-price"><span class="clrstyle">1 X</span>&nbsp;&nbsp; Rs. 250,000.00
+                            </div>
+                        </div>
+
+                        <div class="p-close">
+                            <i class="bi bi-x-circle-fill"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="cart-produtaddmn mt-2">
+
+                        <div class="p-img">
+                            <img src="sofa-2cart.png" class="img-fluid">
+                        </div>
+
+                        <div class="p-price">
+                            <div class="cart-product-name">Casaliving Wood</div>
+                            <div class="cart-product-price"><span class="clrstyle">1 X</span>&nbsp;&nbsp; Rs. 270,000.00
+                            </div>
+                        </div>
+
+                        <div class="p-close">
+                            <i class="bi bi-x-circle-fill"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+
+                    <div class="subtlt">
+                        Subtotal <span class="subprc">Rs. 520,000.00</span>
+                    </div>
+
+                    <div class="crt-btn-ftr">
+                        <button type="button" class="cart-frt-btn"><a href="cart.html">Cart</a></button>
+                        <button type="button" class="cart-frt-btn"><a href="Checkout.html">Checkout</a></button>
+                        <button type="button" class="cart-frt-btn"><a
+                                href="Product-Comparison.html">Comparison</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==== modal cart End ====  -->
+
+    <!-- ==== navbar End ==== -->
+
+    <!-- ==== Hiro sec start ==== -->
+
+    <div class="container-fluid shop-hiro-main">
+        <img src="compair-logo.png" class="img-fluid anmtn">
+        <h1>Product Comparison</h1>
+        <div class="sec-navbr-inmnbg text-center">
+            <a href="index.html">Home > </a><a href="shop.html" class="active-shopmn">Comparison</a>
+        </div>
+    </div>
+
+    <!-- ==== Hiro sec End ==== -->
+
+    <!-- ===================
+    Product-Comparison start
+    =================== -->
+
+    <div class="container">
+
+        <div class="row product-compair-row">
+
+            <div class="col-md-6">
+
+                <div class="view-more">
+                    <h2>Go to Product page for more Products</h2>
+                    <button type="button" class="vew-mre-butn"><a href="shop.html">View More</a></button>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <div class="view-more-forth">
+                    <h4>Add A Product</h4>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Choose a Product</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ===================
+     Product-Comparison End
+    =================== -->
+
+    <!-- ===================
+      Items Details Start
+    =================== -->
+
+    <div class="container itemdetailsmain">
+
+
+        <div class="row idmr">
+            <!-- ==== General ==== -->
+
+            <div class="card bgset p-0" style="width: 18rem;">
+                <div class="card-cncts">
+                    <img src="indoresofa-one.png" class="card-img-top" alt="...">
+                    <div class="pdiv">
+                        <p class="card-text crd-hed">Asgaard Sofa</p>
+                        <p class="crd-price">Rs. 250,000.00</p>
+                        <div class="ratting-star">
+                            <p class="crd-price">4.7</p>
+                            <div class="five-star">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <div class="sprter"></div>
+                            <p>204 Review</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row idmr-two">
+                <p class="card-text crd-hed">General</p>
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Sales Package</div>
+                    <div class="col-md-6">1 sectional sofa</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Model Number</div>
+                    <div class="col-md-6">TFCBLIGRBL6SRHS</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Secondary Material</div>
+                    <div class="col-md-6">Solid Wood</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Configuration</div>
+                    <div class="col-md-6">L-shaped</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Upholstery Material</div>
+                    <div class="col-md-6">Fabric + Cotton</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Upholstery Color</div>
+                    <div class="col-md-6">Bright Grey & Lion</div>
+                </div>
+            </div>
+
+            <!-- ==== Product ==== -->
+
+            <div class="row idmr-two">
+                <p class="card-text crd-hed">Product</p>
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Filling Material</div>
+                    <div class="col-md-6">Foam</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Finish Type</div>
+                    <div class="col-md-6">Bright Grey & Lion</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Adjustable Headrest</div>
+                    <div class="col-md-6">No</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Maximum Load Capacity</div>
+                    <div class="col-md-6">280 KG</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Origin of Manufacture</div>
+                    <div class="col-md-6">India</div>
+                </div>
+            </div>
+
+            <!-- ==== Dimensions ==== -->
+
+            <div class="row idmr-two">
+                <p class="card-text crd-hed">Dimensions</p>
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Width</div>
+                    <div class="col-md-6">265.32 cm</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Height</div>
+                    <div class="col-md-6">76 cm</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Depth</div>
+                    <div class="col-md-6">167.76 cm</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Weight</div>
+                    <div class="col-md-6">45 KG</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Seat Height</div>
+                    <div class="col-md-6">41.52 cm</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Leg Height</div>
+                    <div class="col-md-6">5.46 cm</div>
+                </div>
+            </div>
+
+            <!-- ==== Warranty ==== -->
+
+            <div class="row idmr-two">
+                <p class="card-text crd-hed">Warranty</p>
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Warranty Summary</div>
+                    <div class="col-md-6">1 Year Manufacturing Warranty</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Warranty Service Type</div>
+                    <div class="col-md-6">For Warranty Claims or Any Product Related Issues Please Email at
+                        operations@trevifurniture.com</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Covered in Warranty</div>
+                    <div class="col-md-6">Warranty Against Manufacturing Defect</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Not Covered in Warranty</div>
+                    <div class="col-md-6">The Warranty Does Not Cover Damages Due To Usage Of The Product Beyond Its
+                        Intended Use And Wear & Tear In The Natural Course Of Product Usage.</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Domestic Warranty</div>
+                    <div class="col-md-6">1 Year</div>
+                </div>
+
+                <p class="btnstyle"><button type="button" class="btn btn-sm wrntybtn"><a href="cart.html">Add To
+                            Cart</a></button></p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ====> compaire product <==== -->
+
+        <div class="row idmr">
+
+            <div class="card bgset p-0" style="width: 18rem;">
+                <div class="card-cncts">
+                    <img src="compaireimg-secnd.png" class="card-img-top" alt="...">
+                    <div class="pdiv">
+                        <p class="card-text crd-hed">Outdoor Sofa Set</p>
+                        <p class="crd-price">Rs. 224,000.00</p>
+                        <div class="ratting-star">
+                            <p class="crd-price">4.2</p>
+                            <div class="five-star">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <div class="sprter"></div>
+                            <p>145 Review</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==== General ==== -->
+            <div class="row idmr-two">
+                <p class="card-text crd-hed">General</p>
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Sales Package</div>
+                    <div class="col-md-6">1 Three Seater, 2 Single Seater</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Model Number</div>
+                    <div class="col-md-6">DTUBLIGRBL568</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Secondary Material</div>
+                    <div class="col-md-6">Solid Wood</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Configuration</div>
+                    <div class="col-md-6">L-shaped</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Upholstery Material</div>
+                    <div class="col-md-6">Fabric + Cotton</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Upholstery Color</div>
+                    <div class="col-md-6">Bright Grey & Lion</div>
+                </div>
+            </div>
+
+            <!-- ==== Product ==== -->
+
+            <div class="row idmr-two">
+                <p class="card-text crd-hed">Product</p>
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Filling Material</div>
+                    <div class="col-md-6">Matte</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Finish Type</div>
+                    <div class="col-md-6">Bright Grey & Lion</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Adjustable Headrest</div>
+                    <div class="col-md-6">Yes</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Maximum Load Capacity</div>
+                    <div class="col-md-6">300 KG</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Origin of Manufacture</div>
+                    <div class="col-md-6">India</div>
+                </div>
+            </div>
+
+            <!-- ==== Dimensions ==== -->
+
+            <div class="row idmr-two">
+                <p class="card-text crd-hed">Dimensions</p>
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Width</div>
+                    <div class="col-md-6">265.32 cm</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Height</div>
+                    <div class="col-md-6">76 cm</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Depth</div>
+                    <div class="col-md-6">167.76 cm</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Weight</div>
+                    <div class="col-md-6">65 KG</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Seat Height</div>
+                    <div class="col-md-6">41.52 cm</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Leg Height</div>
+                    <div class="col-md-6">5.46 cm</div>
+                </div>
+            </div>
+
+            <!-- ==== Warranty ==== -->
+
+            <div class="row idmr-two">
+                <p class="card-text crd-hed">Warranty</p>
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Warranty Summary</div>
+                    <div class="col-md-6">1.2 Year Manufacturing Warranty</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Warranty Service Type</div>
+                    <div class="col-md-6">For Warranty Claims or Any Product Related Issues Please Email at
+                        support@xyz.com</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Covered in Warranty</div>
+                    <div class="col-md-6">Warranty of the product is limited to manufacturing defects only.</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Not Covered in Warranty</div>
+                    <div class="col-md-6">The Warranty Does Not Cover Damages Due To Usage Of The Product Beyond Its
+                        Intended Use And Wear & Tear In The Natural Course Of Product Usage.</div>
+                </div>
+
+                <div class="row mx-auto p-0 idmr-three">
+                    <div class="col-md-6">Domestic Warranty</div>
+                    <div class="col-md-6">3 Months</div>
+                </div>
+
+                <p class="btnstyle"><button type="button" class="btn btn-sm wrntybtn"><a href="cart.html">Add To
+                            Cart</a></button></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <!-- ===================
+       Items Details End
+    =================== -->
+
+    <!-- ==== footer section start ==== -->
+
+    <footer>
+
+        <div class="container-fluid footer-section mt-5">
+
+            <div class="row rw-footer">
+
+                <div class="col-md-4 logo-ftr">
+
+                    <ul class="logo-ul">Funiro.
+                        <li class="logo-pera">
+                            400 University Drive Suite 200 Coral <br> Gables, <br> FL 33134 USA
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-2 menu-ftr">
+
+                    <ul class="menu-ul">Links
+                        <li>Home</li>
+                        <li>Shop</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-2 manu-ftr">
+
+                    <ul class="menu-ul">Help
+                        <li>Payment Options</li>
+                        <li>Returns</li>
+                        <li>Privacy Policies</li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4 subscribe-ftr">
+
+                    <ul class="menu-ul">Newsletter
+                        <li>
+                            <input type="text" placeholder="Enter Your Email Address" name="email" id="email"
+                                class="ftr-mail"> <button type="submit" class="btn-ftrsbcrib">SUBSCRIBE</button>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+            <div class="container copy-right">
+                2023 furino. All rights reverved
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ===== footer section End ==== -->
+
+    <!-- ==== jquery CDN ====  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+    <!-- ==== Slick slider min.js CDN ====  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#nav-icon2').click(function () {
+                $(this).toggleClass('open');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
